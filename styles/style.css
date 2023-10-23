@@ -1,0 +1,110 @@
+* {
+  /*determinar ancho incluye su pading y boprde*/
+  margin: 0;
+  padding: 0;
+}
+
+.container-padre {
+  display: grid;
+  background-color: rgb(230, 221, 221);
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "titulo titulo titulo titulo" "menu productos productos productos" "menu productos productos productos" "menu productos productos productos" "footer footer footer footer";
+}
+
+.titulo {
+  grid-area: titulo;
+  background-color: aqua;
+  color: white;
+  background-color: rgb(33, 33, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 30px;
+}
+
+.menu {
+  grid-area: menu;
+  display: flex;
+  flex-direction: column;
+  text-indent: 5px;
+  row-gap: 7px;
+  height: 80vh;
+}
+
+p-ca {
+  text-indent: 15px;
+}
+
+.footer {
+  grid-area: footer;
+  color: gray;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+}
+
+img {
+  width: 120px;
+  height: 140px;
+}
+
+.com {
+  background-color: rgb(33, 33, 255);
+  color: white;
+  width: 150px;
+  text-align: center;
+}
+
+.productos {
+  grid-area: productos;
+  margin: 10px;
+  padding: 10px;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 5%;
+  -moz-column-gap: 5%;
+       column-gap: 5%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.cuadro {
+  border: 1px solid black;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1%;
+  width: 150px;
+  height: 200px;
+  row-gap: 2%;
+}
+
+.h5 {
+  height: 15px;
+  width: 60px;
+  text-align: center;
+}
+
+.h6 {
+  height: 15px;
+  width: 40px;
+  text-align: center;
+}
+
+.p {
+  border: 1px solid rgb(44, 102, 227);
+  color: white;
+  background-color: rgb(44, 102, 227);
+  text-align: center;
+  height: 12%;
+  width: 150px;
+}/*# sourceMappingURL=style.css.map */
